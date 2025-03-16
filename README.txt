@@ -12,4 +12,6 @@ Svi jsoni sa kojima rade ovi endpointi nisu idealni i trebace modifikacije, oni 
 i kao PDF dokument.
 
 Neophodno instalirati msys2
+Detaljnije uputstvo kako instalirati WeasyPrint uputstvo je na sledecem linku:https://doc.courtbouillon.org/weasyprint/stable/first_steps.html
+U slucaju dockera, pogledati instalaciju za linux.
 
