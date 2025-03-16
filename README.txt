@@ -11,3 +11,5 @@ Svi jsoni sa kojima rade ovi endpointi nisu idealni i trebace modifikacije, oni 
 ● Omogućiti eksport podataka o nastavnicima i studentima kao XML
 i kao PDF dokument.
 
+Neophodno instalirati msys2
+
