@@ -1,0 +1,5 @@
+Flask==2.2.2
+PyPDF2==3.0.1
+Flask-WeasyPrint==0.6.0
+WeasyPrint==53.3
+PyMuPDF==1.22.3

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Studenata i Profesora</title>
+    <link rel="stylesheet" href="../static/export.css">
+</head>
+<body>
+    <h1>Lista Studenata i Profesora</h1>
+
+    <div class="container">
+        {% if univerzitet and fakultet %}
+            <h2>Rezultati za {{ univerzitet }} - {{ fakultet }}</h2>
+
+            <h3>Lista Studenata</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Broj Indeksa</th>
+                        <th>Ime i Prezime</th>
+                        <th>Email</th>
+                        <th>Datum Rođenja</th>
+                        <th>Program Studija</th>
+                        <th>Godina Studija</th>
+                        <th>Prosečna Ocena</th>
+                        <th>Fakultet</th>
+                        <th>Univerzitet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for student in studenti %}
+                        <tr>
+                            <td>{{ student.broj_indeksa }}</td>
+                            <td>{{ student.ime_prezime }}</td>
+                            <td>{{ student.email }}</td>
+                            <td>{{ student.datum_rođenja }}</td>
+                            <td>{{ student.program_studija }}</td>
+                            <td>{{ student.godina_studija }}</td>
+                            <td>{{ student.prosečna_ocena }}</td>
+                            <td>{{ student.fakultet }}</td>
+                            <td>{{ student.univerzitet }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <h3>Lista Profesora</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ime i Prezime</th>
+                        <th>Email</th>
+                        <th>Telefon</th>
+                        <th>Katedra</th>
+                        <th>Akademski Naslov</th>
+                        <th>Zvanje</th>
+                        <th>Fakultet</th>
+                        <th>Univerzitet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for profesor in nastavnici %}
+                        <tr>
+                            <td>{{ profesor.ime_prezime }}</td>
+                            <td>{{ profesor.email }}</td>
+                            <td>{{ profesor.telefon }}</td>
+                            <td>{{ profesor.katedra }}</td>
+                            <td>{{ profesor.akademski_naslov }}</td>
+                            <td>{{ profesor.zvanje }}</td>
+                            <td>{{ profesor.fakultet }}</td>
+                            <td>{{ profesor.univerzitet }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </div>
+</body>
+</html>

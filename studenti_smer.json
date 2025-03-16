@@ -1,0 +1,14 @@
+{
+    "Softversko inženjerstvo": [
+        {"ime_prezime": "Marko Marković", "broj_indeksa": "SI-2021-001", "k1": 18, "k2": 17, "ispit": 45},
+        {"ime_prezime": "Jovana Petrović", "broj_indeksa": "SI-2021-002", "k1": 20, "k2": "", "ispit": ""},
+        {"ime_prezime": "Nikola Jovanović", "broj_indeksa": "SI-2021-003", "k1": 19, "k2": 15, "ispit": ""},
+        {"ime_prezime": "Ana Ilić", "broj_indeksa": "SI-2021-004", "k1": "", "k2": "", "ispit": ""}
+    ],
+    "Informacioni sistemi": [
+        {"ime_prezime": "Stefan Nikolić", "broj_indeksa": "IS-2021-001", "k1": 16, "k2": "", "ispit": ""},
+        {"ime_prezime": "Maja Stanković", "broj_indeksa": "IS-2021-002", "k1": 19, "k2": 18, "ispit": 47},
+        {"ime_prezime": "Vladimir Pavlović", "broj_indeksa": "IS-2021-003", "k1": 14, "k2": 13, "ispit": ""},
+        {"ime_prezime": "Sara Lukić", "broj_indeksa": "IS-2021-004", "k1": "", "k2": "", "ispit": ""}
+    ]
+}

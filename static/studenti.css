@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    table-layout: auto;
+}
+td, th {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+}

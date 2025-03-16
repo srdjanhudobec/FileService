@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potvrda o redovnom studiranju</title>
+    <link rel="stylesheet" href="../static/potvrda_o_redovnom_studiranju.css">
+</head>
+<body>
+    <div class="certificate-container">
+        <div class="certificate-header">
+            Potvrda o redovnom studiranju
+        </div>
+        <div class="certificate-body">
+            <p>Ovim se potvrđuje da je student <strong>{{ student.ime_prezime }}</strong>, sa brojem indeksa <strong>{{ student.broj_indeksa }}</strong>,
+            upisan na <strong>{{ student.fakultet }}</strong>, program studija <strong>{{ student.program_studija }}</strong>,
+            na <strong>{{ student.godina_studija }}</strong> godini studija, sa statusom: <strong>{{ student.status }}</strong>.</p>
+        </div>
+        <div class="footer">
+            <p class="date">Datum izdavanja: {{ student.datum_izdavanja }}</p>
+        </div>
+    </div>
+</body>
+</html>

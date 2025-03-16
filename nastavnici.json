@@ -1,0 +1,68 @@
+[
+  {
+    "ime_prezime": "Prof. Dr. Jovan Jovanović",
+    "email": "jovan.jovanovic@example.com",
+    "telefon": "+381 64 765 4321",
+    "adresa": {
+      "ulica": "Zlatibor 4",
+      "grad": "Beograd",
+      "poštanski_broj": "11000"
+    },
+    "katedra": "Računarske nauke",
+    "akademski_naslov": "Profesor",
+    "zvanje": "Redovni profesor",
+    "usluge": [
+      {
+        "tip": "Konsultacije",
+        "dan": "Ponedeljak",
+        "vreme": "14:00-16:00"
+      },
+      {
+        "tip": "Savetovanje studenata",
+        "dan": "Petak",
+        "vreme": "10:00-12:00"
+      }
+    ],
+    "nagrade": [
+      {
+        "naziv": "Nagrada za najboljeg predavača",
+        "godina": 2019
+      }
+    ],
+    "fakultet": "Fakultet tehničkih nauka",
+    "univerzitet": "Univerzitet u Beogradu"
+  },
+  {
+    "ime_prezime": "Prof. Dr. Jovan Jovanović",
+    "email": "jovan.jovanovic@example.com",
+    "telefon": "+381 64 765 4321",
+    "adresa": {
+      "ulica": "Zlatibor 4",
+      "grad": "Beograd",
+      "poštanski_broj": "11000"
+    },
+    "katedra": "Računarske nauke",
+    "akademski_naslov": "Profesor",
+    "zvanje": "Redovni profesor",
+    "usluge": [
+      {
+        "tip": "Konsultacije",
+        "dan": "Ponedeljak",
+        "vreme": "14:00-16:00"
+      },
+      {
+        "tip": "Savetovanje studenata",
+        "dan": "Petak",
+        "vreme": "10:00-12:00"
+      }
+    ],
+    "nagrade": [
+      {
+        "naziv": "Nagrada za najboljeg predavača",
+        "godina": 2019
+      }
+    ],
+    "fakultet": "Fakultet tehničkih nauka",
+    "univerzitet": "Univerzitet u Beogradu"
+  }
+]

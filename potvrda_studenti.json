@@ -1,0 +1,21 @@
+[
+    {
+      "broj_indeksa": "1234521",
+      "ime_prezime": "Marko Marković",
+      "fakultet": "Fakultet tehničkih nauka",
+      "program_studija": "Računarske nauke",
+      "godina_studija": "2. godina",
+      "status": "Redovan student",
+      "datum_izdavanja": "15. mart 2025."
+    },
+    {
+      "broj_indeksa": "5432121",
+      "ime_prezime": "Ana Anić",
+      "fakultet": "Fakultet prirodnih nauka",
+      "program_studija": "Matematika",
+      "godina_studija": "3. godina",
+      "status": "Vandredni student",
+      "datum_izdavanja": "16. mart 2025."
+    }
+  ]
+  

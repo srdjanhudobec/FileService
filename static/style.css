@@ -1,0 +1,58 @@
+.logo {
+    max-width: 80px;
+    height: 60px;
+    margin-top: 10px;
+}
+div {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+h1, h2, p {
+    margin: 0;
+    padding-bottom: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    table-layout: fixed;
+}
+td, th {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+.header-row {
+    background-color: #f0f0f0;
+}
+.profesorSpan {
+    color: red;
+}
+.header{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.pageNumber{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+    color: gray;
+}
+@page {
+    size: A4;
+    margin: 2cm;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    margin-top: 100px;
+    font-size: 28px;
+}
+p {
+    font-size: 18px;
+}

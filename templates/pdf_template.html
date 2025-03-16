@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generated PDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>{{silabus["Naziv fakulteta"]}}</h1>
+        <img src="{{silabus['Logo']}}" alt="Лого Факултета" class="logo">
+        <h2>Акредитација студијског програма</h2>
+        <p>{{silabus["Studijski program"]}}</p>
+    </div>
+    <table>
+        <tr class="header-row">
+            <th colspan="6">Студијски програм: {{ silabus["Studijski program"] }}</th>
+        </tr>
+        <tr>
+            <th colspan="6">Назив предмета: {{ silabus["Naziv predmeta"] }}</th>
+        </tr>
+        <tr>
+            <th colspan="6">
+                Наставник/наставници: 
+                {% for nastavnik in silabus["Nastavnik / Nastavnici"] %}
+                    <span class="profesorSpan">{{ nastavnik["podaci"] }}</span><br>
+                {% endfor %}
+            </th>
+        </tr>
+        <tr>
+            <th colspan="6">Статус предмета: {{ silabus["Status predmeta"] }}</th>
+        </tr>
+        <tr>
+            <th colspan="6">Број ESPB: {{ silabus["Broj ESPB"] }}</th>
+        </tr>
+        <tr>
+            <th colspan="6">Услов: {{ silabus["Uslov"] }}</th>
+        </tr>
+        <tr>
+            <th colspan="6">Предмети предуслови: {{ silabus["Predmeti preduslovi"] }}</th>
+        </tr>
+        <tr>
+            <th colspan="6">Циљ предмета: {{ silabus["Cilj predmeta"] }}</th>
+        </tr>
+        <tr>
+            <th colspan="6">Исход предмета: {{ silabus["Ishod predmeta"] }}</th>
+        </tr>
+        <tr>
+            <th colspan="6">Садржај предмета: {{ silabus["Sadrzaj predmeta"] }}</th>
+        </tr>
+        <tr>
+            <th colspan="6">Литература: </th>
+        </tr>
+        <tr>
+            <td colspan="1">Р.бр.</td>
+            <td colspan="1">Аутор</td>
+            <td colspan="2">Назив</td>
+            <td colspan="1">Издавач</td>
+            <td colspan="1">Година</td>
+        </tr>
+        <tr>
+            <td colspan="1">{{ silabus["Literatura"][0]["R.br"] }}</td>
+            <td colspan="1">{{ silabus["Literatura"][0]["Autor"] }}</td>
+            <td colspan="2">{{ silabus["Literatura"][0]["Naziv"] }}</td>
+            <td colspan="1">{{ silabus["Literatura"][0]["Izdavac"] }}</td>
+            <td colspan="1">{{ silabus["Literatura"][0]["Godina"] }}</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Број часова активне наставе</td>
+            <td rowspan="2">Теоријска настава</td>
+            <td colspan="3">Практична настава</td>
+            <td rowspan="2">Остало</td>
+        </tr>
+        <tr>
+            <td>Вежбе</td>
+            <td>DON</td>
+            <td>SIR</td>
+        </tr>
+        <tr>
+            <td>{{ silabus["Broj casova aktivne nastave"][0]["Teorijska nastava"] }}</td>
+            <td>{{ silabus["Broj casova aktivne nastave"][1]["Prakticna nastava"][0]["Vezbe"] }}</td>
+            <td>{{ silabus["Broj casova aktivne nastave"][1]["Prakticna nastava"][1]["DON"] }}</td>
+            <td>{{ silabus["Broj casova aktivne nastave"][1]["Prakticna nastava"][2]["SIR"] }}</td>
+            <td>{{ silabus["Broj casova aktivne nastave"][2]["Ostalo"] }}</td>
+        </tr>
+        <tr>
+            <td colspan="6">Методе извођења наставе: {{ silabus["Metode izvodjenja nastave"] }}</td>
+        </tr>
+        <tr>
+            <th colspan="6">Оцена знања (максимални број поена 100):</th>
+        </tr>
+        <tr>
+            <th>Predispitne obaveze</th>
+            <th>Obavezna</th>
+            <th>Poena</th>
+            <th>Zavrsni ispit</th>
+            <th>Obavezna</th>
+            <th>Poena</th>
+        </tr>
+        <tr>
+            <td>{{ silabus["Ocena znanja (maksimalni broj poena 100)"]["Predispitne obaveze"][0]["Naziv"] }}</td>
+            <td>{{ silabus["Ocena znanja (maksimalni broj poena 100)"]["Predispitne obaveze"][0]["Obavezna"] }}</td>
+            <td>{{ silabus["Ocena znanja (maksimalni broj poena 100)"]["Predispitne obaveze"][0]["Poena"] }}</td>
+            <td>{{ silabus["Ocena znanja (maksimalni broj poena 100)"]["Zavrsni ispit"][0]["Naziv"] }}</td>
+            <td>{{ silabus["Ocena znanja (maksimalni broj poena 100)"]["Zavrsni ispit"][0]["Obavezna"] }}</td>
+            <td>{{ silabus["Ocena znanja (maksimalni broj poena 100)"]["Zavrsni ispit"][0]["Poena"] }}</td>
+        </tr>
+        <tr>
+            <td>{{ silabus["Ocena znanja (maksimalni broj poena 100)"]["Predispitne obaveze"][1]["Naziv"] }}</td>
+            <td>{{ silabus["Ocena znanja (maksimalni broj poena 100)"]["Predispitne obaveze"][1]["Obavezna"] }}</td>
+            <td>{{ silabus["Ocena znanja (maksimalni broj poena 100)"]["Predispitne obaveze"][1]["Poena"] }}</td>
+            <td colspan="3"></td>
+        </tr>
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Raspored Predavanja</title>
+    <link rel="stylesheet" href="../static/raspored_template.css">
+</head>
+<body>
+    <h1>Raspored predavanja za {{ smer }}</h1>
+    <h2>{{ raspored["od_do"] }} - {{ raspored["semestar"] }} semestar</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Dan</th>
+                <th>Predmet</th>
+                <th>Vreme</th>
+                <th>Grupa</th>
+                <th>Nastavnik</th>
+                <th>Tip</th>
+                <th>Učionica</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set dani = ['Ponedeljak', 'Utorak', 'Sreda', 'Četvrtak', 'Petak'] %}
+            {% for dan in dani %}
+                {% if raspored[dan] %}
+                    {% set broj_predmeta = raspored[dan] | length %}
+                    {% for predmet in raspored[dan] %}
+                        <tr>
+                            {% if loop.first %}
+                                <td rowspan="{{ broj_predmeta }}">{{ dan }}</td>
+                            {% endif %}
+                            <td>{{ predmet.predmet }}</td>
+                            <td>{{ predmet.vreme }}</td>
+                            <td>{{ predmet.grupa }}</td>
+                            <td>{{ predmet.nastavnik }}</td>
+                            <td>{{ predmet.tip }}</td>
+                            <td>{{ predmet.ucionica }}</td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td>{{ dan }}</td>
+                        <td colspan="6" class="center">Nema predavanja za ovaj dan</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

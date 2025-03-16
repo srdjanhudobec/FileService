@@ -1,0 +1,70 @@
+[
+  {
+    "broj_indeksa": "12345/21",
+    "ime_prezime": "Marko Marković",
+    "email": "marko.markovic@example.com",
+    "datum_rođenja": "1999-06-15",
+    "adresa": {
+      "ulica": "Neka ulica 12",
+      "grad": "Beograd",
+      "poštanski_broj": "11000"
+    },
+    "telefon": "+381 64 123 4567",
+    "program_studija": "Računarske nauke",
+    "godina_studija": "2. godina",
+    "status": "Redovan student",
+    "predmeti": [
+      {
+        "naziv": "Računarske mreže",
+        "sifra": "RM101",
+        "ocena": "9",
+        "semestar": "Zimski"
+      },
+      {
+        "naziv": "Algoritmi i strukture podataka",
+        "sifra": "ASD102",
+        "ocena": "10",
+        "semestar": "Letnji"
+      }
+    ],
+    "prosečna_ocena": "9.5",
+    "datum_upisa": "2021-10-01",
+    "uslov": false,
+    "fakultet": "Fakultet tehničkih nauka",
+    "univerzitet": "Univerzitet u Beogradu"
+  },
+  {
+    "broj_indeksa": "12345/21",
+    "ime_prezime": "Marko Marković",
+    "email": "marko.markovic@example.com",
+    "datum_rođenja": "1999-06-15",
+    "adresa": {
+      "ulica": "Neka ulica 12",
+      "grad": "Beograd",
+      "poštanski_broj": "11000"
+    },
+    "telefon": "+381 64 123 4567",
+    "program_studija": "Računarske nauke",
+    "godina_studija": "2. godina",
+    "status": "Redovan student",
+    "predmeti": [
+      {
+        "naziv": "Računarske mreže",
+        "sifra": "RM101",
+        "ocena": "9",
+        "semestar": "Zimski"
+      },
+      {
+        "naziv": "Algoritmi i strukture podataka",
+        "sifra": "ASD102",
+        "ocena": "10",
+        "semestar": "Letnji"
+      }
+    ],
+    "prosečna_ocena": "9.5",
+    "datum_upisa": "2021-10-01",
+    "uslov": false,
+    "fakultet": "Fakultet tehničkih nauka",
+    "univerzitet": "Univerzitet u Beogradu"
+  }
+]

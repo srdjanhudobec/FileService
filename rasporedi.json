@@ -1,0 +1,115 @@
+{
+  "softversko_inzenjerstvo": {
+    "od_do": "01.10.2024 - 15.02.2025",
+    "semestar": "Zimski",
+    "Ponedeljak": [
+      {
+        "predmet": "Programiranje",
+        "vreme": "09:00 - 11:00",
+        "grupa": "Svi",
+        "nastavnik": "Dr. Jovanović",
+        "tip": "Predavanje",
+        "ucionica": "101"
+      },
+      {
+        "predmet": "Algoritmi",
+        "vreme": "11:00 - 13:00",
+        "grupa": "Grupa 2",
+        "nastavnik": "Dr. Petrović",
+        "tip": "Vežbe",
+        "ucionica": "102"
+      }
+    ],
+    "Utorak": [
+      {
+        "predmet": "Računarske mreže",
+        "vreme": "09:00 - 11:00",
+        "grupa": "Svi",
+        "nastavnik": "Dr. Marković",
+        "tip": "Predavanje",
+        "ucionica": "103"
+      }
+    ],
+    "Sreda": [],
+    "Četvrtak": [
+      {
+        "predmet": "Baze podataka",
+        "vreme": "09:00 - 11:00",
+        "grupa": "Grupa 1",
+        "nastavnik": "Dr. Ilić",
+        "tip": "Vežbe",
+        "ucionica": "104"
+      },
+      {
+        "predmet": "Baze podataka",
+        "vreme": "11:00 - 13:00",
+        "grupa": "Grupa 2",
+        "nastavnik": "Dr. Ilić",
+        "tip": "Vežbe",
+        "ucionica": "104"
+      }
+    ],
+    "Petak": []
+  },
+  "informacione_tehnologije": {
+    "od_do": "01.10.2024 - 15.02.2025",
+    "semestar": "Zimski",
+    "Ponedeljak": [
+      {
+        "predmet": "Osnove informacionih sistema",
+        "vreme": "08:00 - 10:00",
+        "grupa": "Svi",
+        "nastavnik": "Dr. Nikolić",
+        "tip": "Predavanje",
+        "ucionica": "201"
+      },
+      {
+        "predmet": "Analiza i dizajn sistema",
+        "vreme": "10:00 - 12:00",
+        "grupa": "Grupa 1",
+        "nastavnik": "Dr. Lukić",
+        "tip": "Vežbe",
+        "ucionica": "202"
+      }
+    ],
+    "Utorak": [
+      {
+        "predmet": "Upravljanje projektima",
+        "vreme": "08:00 - 10:00",
+        "grupa": "Svi",
+        "nastavnik": "Dr. Pavlović",
+        "tip": "Predavanje",
+        "ucionica": "203"
+      }
+    ],
+    "Sreda": [
+      {
+        "predmet": "ERP sistemi",
+        "vreme": "10:00 - 12:00",
+        "grupa": "Grupa 2",
+        "nastavnik": "Dr. Stanković",
+        "tip": "Vežbe",
+        "ucionica": "204"
+      }
+    ],
+    "Četvrtak": [
+      {
+        "predmet": "Sigurnost informacionih sistema",
+        "vreme": "09:00 - 11:00",
+        "grupa": "Svi",
+        "nastavnik": "Dr. Mitrović",
+        "tip": "Predavanje",
+        "ucionica": "205"
+      },
+      {
+        "predmet": "Sigurnost informacionih sistema",
+        "vreme": "11:00 - 13:00",
+        "grupa": "Grupa 1",
+        "nastavnik": "Dr. Mitrović",
+        "tip": "Vežbe",
+        "ucionica": "205"
+      }
+    ],
+    "Petak": []
+  }
+}

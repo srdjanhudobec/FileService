@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista studenata - {{ smer }}</title>
+    <link rel="stylesheet" href="../static/studenti.css">
+</head>
+<body>
+    <h1>Lista studenata za smer: {{ smer }}</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Broj indeksa</th>
+                <th>Ime i prezime</th>
+                <th>K1</th>
+                <th>K2</th>
+                <th>Ispit</th>
+                <th>Ukupno bodova</th>
+                <th>Ocena</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in studenti %}
+            <tr>
+                <td>{{ student.broj_indeksa }}</td>
+                <td>{{ student.ime_prezime }}</td>
+                <td>{{ student.k1 if student.k1 != '' else 'Nije izašao' }}</td>
+                <td>{{ student.k2 if student.k2 != '' else 'Nije izašao' }}</td>
+                <td>{{ student.ispit if student.ispit != '' else 'Nema ocenu' }}</td>
+                <td>{{ student.ukupno if student.ukupno != '' else 'N/A' }}</td>
+                <td>{{ student.ocena if student.ocena != '' else 'N/A' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
